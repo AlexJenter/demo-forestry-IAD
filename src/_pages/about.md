@@ -1,6 +1,5 @@
 ---
 title: About
-page_slug: about
 ---
 
 ## Hello about

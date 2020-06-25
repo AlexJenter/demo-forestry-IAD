@@ -19,19 +19,43 @@
       header {
         background-color: lightcoral;
         width: 100%;
-        text-align: center;
-        color: white
       }
       .content {
         flex-grow: 1;
         max-width: 960px;
       }
+      header h1, header a {
+        margin: 0;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 3rem;
+        color: white
+      }
+      header, header ul {
+        margin: 0;
+        display: flex;
+        text-transform: uppercase;
+        list-style: none;
+      }
+      header li + li {
+        margin-left: 2rem;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1>DEMO</h1>
+      <a href="/">
+        <h1>home</h1>
+      </a>
+      <nav>
+        <ul><li>
+              <a href="/about/">About</a>
+            </li><li>
+              <a href="/contact/">Contact</a>
+            </li></ul>
+      </nav>
     </header>
+
     <main class="content">
       <p>this is our index page</p>
 
