@@ -1,0 +1,23 @@
+{
+  "name": "demo-forestry-IAD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexJenter/demo-forestry-IAD.git"
+  },
+  "keywords": [],
+  "author": "Alex Jenter <jenteralex@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexJenter/demo-forestry-IAD/issues"
+  },
+  "homepage": "https://github.com/AlexJenter/demo-forestry-IAD#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
