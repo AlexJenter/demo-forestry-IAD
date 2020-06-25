@@ -4,11 +4,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <title>DEMO</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Roboto, "Comic Sans MS", "Comic Sans", cursive;
+      }
+      header {
+        background-color: lightcoral;
+        width: 100%;
+        text-align: center;
+        color: white
+      }
+      .content {
+        flex-grow: 1;
+        max-width: 960px;
+      }
+    </style>
   </head>
   <body>
-    <h1>DEMO</h1>
-<p>this is our index page</p>
+    <header>
+      <h1>DEMO</h1>
+    </header>
+    <main class="content">
+      <p>this is our index page</p>
 
+    </main>
   </body>
 </html>

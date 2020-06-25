@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/AlexJenter/demo-forestry-IAD#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "@material/typography": "^7.0.0",
+    "js-yaml": "^3.14.0"
   }
 }
