@@ -1,0 +1,46 @@
+---
+title: My Rad Blog
+---
+
+{% set css %}
+  {% include "styles.css" %}
+{% endset %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <title>{{ title }}</title>
+    <style>{{ css | cssmin | safe }}</style>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li {% if page.url == "/" %} class="active"{% endif %}>
+            <a href="/">
+              <h1>home</h1>
+            </a>
+          </li>
+          {%- for p in collections.pages -%}
+            <li
+              {% if page.url == p.url %}
+                class="active"
+              {% endif %} >
+              <a href="{{ p.url }}">{{ p.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </header>
+      {{page | log}}
+
+    <main class="content">
+      {{ content | safe }}
+    </main>
+  </body>
+</html>

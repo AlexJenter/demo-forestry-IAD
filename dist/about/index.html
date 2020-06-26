@@ -1,64 +1,43 @@
 
+
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
     <title>About</title>
-    <style>
-      body {
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-        font-family: Roboto, "Comic Sans MS", "Comic Sans", cursive;
-      }
-      header {
-        background-color: lightcoral;
-        width: 100%;
-      }
-      .content {
-        flex-grow: 1;
-        max-width: 960px;
-      }
-      header h1, header a {
-        margin: 0;
-        text-decoration: none;
-        font-weight: normal;
-        font-size: 3rem;
-        color: white
-      }
-      header, header ul {
-        margin: 0;
-        display: flex;
-        text-transform: uppercase;
-        list-style: none;
-      }
-      header li + li {
-        margin-left: 2rem;
-      }
-    </style>
+    <style>:root{--baseline:1.4;line-height:var(--baseline)}body{box-sizing:border-box;display:flex;align-items:center;flex-direction:column;min-height:100vh;margin:0;font-family:Roboto,"Comic Sans MS","Comic Sans",cursive;background-color:#fff;font-family:Poppins,sans-serif;font-weight:400;line-height:1.65;color:#333}p{margin-bottom:1.15rem}h1,h1.h1{margin-top:0;font-size:3.052em}h2{font-size:2.441em}h3{font-size:1.953em}h4{font-size:1.563em}h5{font-size:1.25em}.text_small,small{font-size:.8em}header{background-color:#f08080;width:100%}.content{flex-grow:1;max-width:960px}header,header ul{margin:0;display:flex;text-transform:uppercase;list-style:none}header a,header h1{margin:0;text-decoration:none;font-weight:400;font-size:3rem;color:#fff}header li+li,header>a{margin-left:2rem}header li.active{position:relative}header li.active::after{position:absolute;content:"";background:#fff;bottom:-1px;left:0;width:100%;height:.5rem}</style>
+
   </head>
   <body>
     <header>
-      <a href="/">
-        <h1>home</h1>
-      </a>
       <nav>
-        <ul><li>
-              <a href="/about/">About</a>
-            </li><li>
+        <ul>
+          <li >
+            <a href="/">
+              <h1>home</h1>
+            </a>
+          </li><li
+               >
               <a href="/contact/">Contact</a>
+            </li><li
+              
+                class="active"
+               >
+              <a href="/about/">About</a>
             </li></ul>
       </nav>
     </header>
+      
 
     <main class="content">
       <h2>Hello about</h2>
-<p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation, eg typography, font, or layout. Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.</p>
+<p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups. It helps to outline the visual elements of a document or presentation</p>
+<h2>typography, font, or layout.</h2>
+<p>Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero. Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; it's not genuine, correct, or comprehensible Latin anymore. While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, these, and others are often inserted randomly to mimic the typographic appearence of European languages, as are digraphs not to be found in the original.</p>
 
     </main>
   </body>
