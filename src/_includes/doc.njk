@@ -1,5 +1,14 @@
 ---
-title: My Rad Blog
+pagination:
+  data: testdata
+  size: 2
+testdata:
+  - item1
+  - item2
+  - item3
+  - item4
+  - item5
+  - item6
 ---
 
 {% set css %}
@@ -21,24 +30,18 @@ title: My Rad Blog
     <header>
       <nav>
         <ul>
-          <li {% if page.url == "/" %} class="active"{% endif %}>
-            <a href="/">
-              <h1>home</h1>
-            </a>
-          </li>
-          {%- for p in collections.pages -%}
+          {# {% for p in ps %}
             <li
               {% if page.url == p.url %}
                 class="active"
               {% endif %} >
+              {{ p.data.sort_weight }}
               <a href="{{ p.url }}">{{ p.data.title }}</a>
             </li>
-          {%- endfor -%}
+          {%- endfor -%} #}
         </ul>
       </nav>
     </header>
-      {{page | log}}
-
     <main class="content">
       {{ content | safe }}
     </main>

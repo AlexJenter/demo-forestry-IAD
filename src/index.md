@@ -1,8 +1,10 @@
 ---
 layout: doc.njk
-title: DEMO
-
+title: Home
+tags: "pages"
+sort_weight: -1
 ---
+
 ## I'm baby roof party
 
 lyft cornhole, seitan bicycle rights street art VHS meh iceland put a bird on it chillwave etsy freegan. Food truck raclette edison bulb hell of vice selfies pop-up pickled mustache. Pour-over taiyaki forage humblebrag gluten-free. Offal shabby chic twee cray aesthetic yuccie. Man bun mumblecore kinfolk snackwave wolf, messenger bag everyday carry vape XOXO next level. Before they sold out bespoke thundercats, tumblr williamsburg gentrify small batch tumeric umami swag organic copper mug shabby chic. Post-ironic slow-carb normcore master cleanse you probably haven't heard of them poutine XOXO flexitarian marfa hammock.
