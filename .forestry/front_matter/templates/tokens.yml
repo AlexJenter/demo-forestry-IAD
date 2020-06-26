@@ -3,5 +3,8 @@ label: Tokens
 hide_body: true
 fields:
 - name: header_color
-  type: boolean
-  label: Header color
+  type: color
+  label: Header Color
+  config:
+    required: false
+    color_format: Hex
