@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: src/index.md
+  label: Home
+  match: "**/*"
+- type: document
   path: src/_data/tokens.yml
   label: Tokens
 - type: directory
