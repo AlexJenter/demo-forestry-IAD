@@ -1,15 +1,8 @@
----
-pagination:
-  data: testdata
-  size: 2
-testdata:
-  - item1
-  - item2
-  - item3
-  - item4
-  - item5
-  - item6
----
+{% macro navItem(text, url, is_active=false) %}
+<li class="{{ 'active' if is_active else '' }}">
+  <a href="{{url}}">{{text}}</a>
+</li>
+{% endmacro %}
 
 {% set css %}
   {% include "styles.css" %}
@@ -23,22 +16,20 @@ testdata:
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
     <title>{{ title }}</title>
+    <style>
+      :root { --header-bg: {{ 'lightcoral' }}; }
+    </style>
     <style>{{ css | cssmin | safe }}</style>
 
   </head>
   <body>
+
     <header>
       <nav>
         <ul>
-          {# {% for p in ps %}
-            <li
-              {% if page.url == p.url %}
-                class="active"
-              {% endif %} >
-              {{ p.data.sort_weight }}
-              <a href="{{ p.url }}">{{ p.data.title }}</a>
-            </li>
-          {%- endfor -%} #}
+          {% for p in collections.pagesSorted %}
+            {{ navItem(p.data.title, p.url, is_active = (page.url == p.url))}}
+          {% endfor %}
         </ul>
       </nav>
     </header>

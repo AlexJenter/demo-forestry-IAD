@@ -2,7 +2,7 @@
 layout: doc.njk
 title: Home
 tags: "pages"
-sort_weight: -1
+sort_order: -1
 ---
 
 ## I'm baby roof party
