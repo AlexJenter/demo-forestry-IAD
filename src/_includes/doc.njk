@@ -17,7 +17,7 @@
 
     <title>{{ title }}</title>
     <style>
-      :root { --header-bg: {{ 'lightcoral' }}; }
+      :root { --header-color: {{ tokens.header_color }}; }
     </style>
     <style>{{ css | cssmin | safe }}</style>
 
