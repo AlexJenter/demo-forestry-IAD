@@ -27,7 +27,7 @@
     <header>
       <nav>
         <ul>
-          {% for p in collections.pagesSorted %}
+          {% for p in collections.pageSorted %}
             {{ navItem(p.data.title, p.url, is_active = (page.url == p.url))}}
           {% endfor %}
         </ul>

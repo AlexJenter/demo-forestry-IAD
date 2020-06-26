@@ -1,7 +1,7 @@
 ---
 layout: doc.njk
 title: Home
-tags: "pages"
+tags: "page"
 sort_order: -1
 ---
 
