@@ -2,6 +2,6 @@
 label: Tokens
 hide_body: true
 fields:
-- type: text
-  name: hello
-  label: hello
+- name: header_color
+  type: boolean
+  label: Header color
