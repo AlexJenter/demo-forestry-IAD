@@ -1,6 +1,10 @@
 {% macro navItem(text, url, is_active=false) %}
 <li class="{{ 'active' if is_active else '' }}">
-  <a href="{{url}}">{{text}}</a>
+  {% if is_active %}
+    <h1>{{ text }}</h1>
+  {% else  %}
+    <a href="{{url}}">{{ text }}</a>
+  {% endif %}
 </li>
 {% endmacro %}
 
@@ -17,7 +21,7 @@
 
     <title>{{ title }}</title>
     <style>
-      :root { --header-color: {{ tokens.header_color }}; }
+      :root { --primary-color: {{ tokens.primary_color }}; }
     </style>
     <style>{{ css | cssmin | safe }}</style>
 
