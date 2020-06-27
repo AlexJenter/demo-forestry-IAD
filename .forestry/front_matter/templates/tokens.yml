@@ -1,4 +1,10 @@
 ---
 label: Tokens
 hide_body: false
-fields: []
+fields:
+- name: primary_color
+  type: color
+  label: Primary Color
+  config:
+    required: false
+    color_format: Hex
