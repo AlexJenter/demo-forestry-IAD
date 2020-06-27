@@ -2,6 +2,9 @@
 label: Tokens
 hide_body: true
 fields:
-- type: text
-  name: primary_color
-  label: primary_color
+- name: primary_color
+  type: color
+  label: Primary Color
+  config:
+    required: false
+    color_format: Hex
