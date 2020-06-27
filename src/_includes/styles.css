@@ -30,6 +30,10 @@ h1.h1 {
   margin-top: 0;
   font-size: 3.052em;
 }
+.lead {
+  font-size: 2rem;
+  font-style: italic;
+}
 
 .content a {
   color: var(--primary-color);

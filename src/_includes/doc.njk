@@ -38,6 +38,9 @@
       </nav>
     </header>
     <main class="content">
+      <div class="lead">
+        {{ lead | safe }}
+      </div>
       {{ content | safe }}
     </main>
   </body>
