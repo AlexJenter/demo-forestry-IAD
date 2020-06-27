@@ -1,9 +1,10 @@
 ---
 title: About
 lead: Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet
-  rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.
-  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-  massa justo sit amet risus.
+  <strong>rutrum</strong> faucibus dolor auctor. Donec ullamcorper nulla non metus
+  auctor fringilla. Fusce <a href="example.com" title="" target="_blank">dapibus</a>,
+  tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+  sit amet risus.
 
 ---
 ## Fixie flexitarian seitan cornhole
