@@ -31,14 +31,20 @@ h1.h1 {
   font-size: 3.052em;
 }
 
-header {
-  background-color: var(--primary-color);
-  width: 100%;
+.content a {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-style: italic;
 }
 
 .content {
   flex-grow: 1;
   max-width: 960px;
+}
+
+header {
+  background-color: var(--primary-color);
+  width: 100%;
 }
 
 header,
